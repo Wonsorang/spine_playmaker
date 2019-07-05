@@ -47,8 +47,8 @@ namespace HutongGames.PlayMaker.Actions
 				Finish ();
 			}
 			
-			var _animation1 = _skeletonAnimation.skeleton.data.FindAnimation(animation1.Value);
-			var _animation2 = _skeletonAnimation.skeleton.data.FindAnimation(animation2.Value);
+			var _animation1 = _skeletonAnimation.skeleton.Data.FindAnimation(animation1.Value);
+			var _animation2 = _skeletonAnimation.skeleton.Data.FindAnimation(animation2.Value);
 			mixDuration.Value = _skeletonAnimation.AnimationState.Data.GetMix(_animation1, _animation2);
 			Finish();
 			

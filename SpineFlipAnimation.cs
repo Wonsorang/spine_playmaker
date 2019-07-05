@@ -43,14 +43,9 @@ namespace HutongGames.PlayMaker.Actions
 				Finish ();
 			}
 			
-			if(flipX.Value)
-			{
-				_skeleton.FlipX = true;
-			}
-			if(flipY.Value)
-			{
-				_skeleton.FlipY = true;
-			}
+			_skeleton.FlipX = flipX.Value;
+			_skeleton.FlipY = flipY.Value;
+			
 			Finish();
 		}
 
